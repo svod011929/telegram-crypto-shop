@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Runtime data
+data/*.db*
+logs/*.log*
+backups/*.db
+
+# Local tooling / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

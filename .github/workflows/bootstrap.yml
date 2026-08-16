@@ -1,0 +1,37 @@
+name: Bootstrap project
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore project payload
+        shell: bash
+        run: |
+          python - <<'PY'
+          import base64
+          from pathlib import Path
+          encoded = ''.join(p.read_text() for p in sorted(Path('.bootstrap').glob('part*')))
+          Path('/tmp/project.tar.xz').write_bytes(base64.b64decode(encoded))
+          PY
+          tar -xJf /tmp/project.tar.xz -C .
+          rm -rf .bootstrap
+          rm -f .github/workflows/bootstrap.yml
+
+      - name: Publish restored project
+        shell: bash
+        run: |
+          git config user.name "KodoDrive"
+          git config user.email "80587651+svod011929@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish Telegram Crypto Shop v0.1.0"
+          git push
