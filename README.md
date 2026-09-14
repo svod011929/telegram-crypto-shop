@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/svod011929/telegram-crypto-shop"><img src="https://img.shields.io/badge/GitHub-telegram-crypto-shop-0D1117?style=for-the-badge&logo=github&logoColor=34D399" alt="repo" /></a>
-  <a href="https://t.me/KodoDrive"><img src="https://img.shields.io/badge/Telegram-@KodoDrive-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="tg" /></a>
+  <a href="https://t.me/gveom"><img src="https://img.shields.io/badge/Telegram-@gveom-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="tg" /></a>
   <a href="https://github.com/svod011929"><img src="https://img.shields.io/badge/Author-svod011929-7C3AED?style=for-the-badge&logo=github&logoColor=white" alt="author" /></a>
 </p>
 
@@ -321,7 +321,7 @@ GitHub Actions автоматически запускает compile check, self
 
 ## Проекты KodoDrive
 
-Другие проекты автора: [профиль @svod011929](https://github.com/svod011929) · [Telegram](https://t.me/KodoDrive)
+Другие проекты автора: [профиль @svod011929](https://github.com/svod011929) · [Telegram](https://t.me/gveom)
 
 ### VPN и инфраструктура
 
